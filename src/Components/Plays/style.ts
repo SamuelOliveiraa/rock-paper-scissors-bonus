@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import bg from "/images/bg-pentagon.svg";
-import Rock from "/images/bg-rock.svg";
-import Paper from "/images/bg-paper.svg";
-import Scissors from "/images/bg-scissors.svg";
-import Spock from "/images/bg-spock.svg";
-import Lizard from "/images/bg-lizard.svg";
+import Rock from "/images/icon-rock.svg";
+import Paper from "/images/icon-paper.svg";
+import Scissors from "/images/icon-scissors.svg";
+import Spock from "/images/icon-spock.svg";
+import Lizard from "/images/icon-lizard.svg";
 
 type Props = {
   chosen: string;
