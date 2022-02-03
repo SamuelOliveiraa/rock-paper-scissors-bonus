@@ -1,2 +1,2 @@
-# rock-paper-scissors-bonus
- rock-paper-scissors-bonus
+# rock-paper-scissor-bonus2
+ rock-paper-scissor-bonus2
