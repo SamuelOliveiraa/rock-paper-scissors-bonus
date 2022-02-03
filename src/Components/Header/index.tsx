@@ -1,5 +1,5 @@
 import { Container, Points } from "./style";
-import Logo from "/images/logo.svg";
+import Logo from "/images/logo-bonus.svg";
 
 type Props = {
   points: number;
