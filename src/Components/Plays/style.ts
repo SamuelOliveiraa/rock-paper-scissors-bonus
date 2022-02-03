@@ -1,8 +1,12 @@
 import styled from "styled-components";
 import bg from "/images/bg-pentagon.svg";
+import Rock from "/images/bg-rock.svg";
+import Paper from "/images/bg-paper.svg";
+import Scissors from "/images/bg-scissors.svg";
+import Spock from "/images/bg-spock.svg";
+import Lizard from "/images/bg-lizard.svg";
 
 type Props = {
-  img: string;
   chosen: string;
 };
 
@@ -57,7 +61,11 @@ export const PlayContent = styled.div<{ msg: boolean }>`
 `;
 
 export const PlayContainer = styled.div<Props>`
-  background: url(${(props) => props.img && props.img});
+  ${(props) => props.chosen === 'rock' && `background: url(${Rock})`};
+  ${(props) => props.chosen === 'paper' && `background: url(${Paper})`};
+  ${(props) => props.chosen === 'scissors' && `background: url(${Scissors})`};
+  ${(props) => props.chosen === 'lizard' && `background: url(${Lizard})`};
+  ${(props) => props.chosen === 'spock' && `background: url(${Spock})`};
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;

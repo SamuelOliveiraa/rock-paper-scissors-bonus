@@ -9,29 +9,12 @@ const Plays = ({ handleSelected }: Props) => {
     <Container>
       <PlayContainer
         onClick={() => handleSelected("scissors")}
-        img="/images/icon-scissors.svg"
         chosen="scissors"
       />
-      <PlayContainer
-        onClick={() => handleSelected("spock")}
-        img="/images/icon-spock.svg"
-        chosen="spock"
-      />
-      <PlayContainer
-        onClick={() => handleSelected("paper")}
-        img="/images/icon-paper.svg"
-        chosen="paper"
-      />
-      <PlayContainer
-        onClick={() => handleSelected("lizard")}
-        img="/images/icon-lizard.svg"
-        chosen="lizard"
-      />
-      <PlayContainer
-        onClick={() => handleSelected("rock")}
-        img="/images/icon-rock.svg"
-        chosen="rock"
-      />
+      <PlayContainer onClick={() => handleSelected("spock")} chosen="spock" />
+      <PlayContainer onClick={() => handleSelected("paper")} chosen="paper" />
+      <PlayContainer onClick={() => handleSelected("lizard")} chosen="lizard" />
+      <PlayContainer onClick={() => handleSelected("rock")} chosen="rock" />
     </Container>
   );
 };

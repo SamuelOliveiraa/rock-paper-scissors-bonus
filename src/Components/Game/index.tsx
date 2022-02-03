@@ -23,9 +23,7 @@ const Game = ({
   useEffect(() => {
     setTimeout(() => {
       var nomes = ["rock", "scissors", "paper", "lizard", "spock"];
-      handleSelectedHouse(
-        nomes[Math.floor(Math.random() * (nomes.length))]
-      );
+      handleSelectedHouse(nomes[Math.floor(Math.random() * nomes.length)]);
     }, 2500);
   }, [selected]);
 
@@ -97,10 +95,7 @@ const Game = ({
         <h2>You Picked</h2>
 
         <PlayContent msg={msg === "You Win" && true}>
-          <PlayContainer
-            img={`/images/icon-${selected}.svg`}
-            chosen={selected}
-          />
+          <PlayContainer chosen={selected} />
         </PlayContent>
       </PickContainer>
 
@@ -127,10 +122,7 @@ const Game = ({
           <PickHouse />
         ) : (
           <PlayContent msg={msg === "You Lose" && true}>
-            <PlayContainer
-              img={`/images/icon-${selectedHouse}.svg`}
-              chosen={selectedHouse}
-            />
+            <PlayContainer chosen={selectedHouse} />
           </PlayContent>
         )}
       </PickContainer>
